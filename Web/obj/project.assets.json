@@ -2462,6 +2462,19 @@
         "runtime": {
           "bin/placeholder/Entities.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -8126,17 +8139,24 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "DataAccess >= 1.0.0",
+      "Entities >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.7",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.7",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.7",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8168,6 +8188,12 @@
           "projectReferences": {
             "C:\\Users\\user\\Desktop\\websuper\\DataAccess\\DataAccess.csproj": {
               "projectPath": "C:\\Users\\user\\Desktop\\websuper\\DataAccess\\DataAccess.csproj"
+            },
+            "C:\\Users\\user\\Desktop\\websuper\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\websuper\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\user\\Desktop\\websuper\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\websuper\\Services\\Services.csproj"
             }
           }
         }
